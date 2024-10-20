@@ -20,7 +20,8 @@ function Page() {
       setSuggestMessageLoading(true)
        try {
           const response = await axios.post<ApiResponse>('/api/suggest-messages');
-          const messagesArray = response.data?.messages?.split('||');
+          const messages:any = response.data?.messages;
+          const messagesArray = messages?.split('||')
           setSuggestedMessages(messagesArray);
           
        } catch (error) {

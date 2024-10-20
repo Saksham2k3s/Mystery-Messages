@@ -39,7 +39,7 @@ function Dashboard() {
 
       let i = 0;
       const typingIntervel = setInterval(() => {
-        if (i < name.length && AnimatedUsername.length < name.length) {
+        if (name && i < name.length && AnimatedUsername.length < name.length) {
           setAnimatedUsername((prev: string) => prev + name[i]);
           i++;
         } else {
