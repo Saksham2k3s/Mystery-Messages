@@ -166,7 +166,9 @@ function Dashboard() {
       </div>
       <h1 className=" text-2xl lg:text-4xl font-bold my-4">Dashboard</h1>
       <div className="mb-4">
-        <h2 className=" text-md lg:text-lg font-semibold mb-2">Copy Your Unique Link</h2>
+        <h2 className=" text-md lg:text-lg font-semibold mb-2">
+          Copy Your Unique Link
+        </h2>
         <div className="flex justify-between items-center">
           <input
             type="text"
